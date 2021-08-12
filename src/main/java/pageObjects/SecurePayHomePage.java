@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SecurePayHomePage {
 	
-	public WebDriver driver;
+	WebDriver driver;
 
 	public SecurePayHomePage(WebDriver driver) {
 		this.driver = driver;
@@ -27,13 +27,9 @@ public class SecurePayHomePage {
 	// Methods
 	public void ClickContactUsLink() {
 		
-		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		//navigate to the end of the page 
+		//((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+
 		LinkContactUs.click();
 		
 	}

@@ -15,9 +15,10 @@ import managers.FileReaderManager;
 		features = "src/test/resources/features",
 		glue= {"stepDefinitions"},
 		//dryRun=true,
-		//plugin = { "pretty", "html:target/cucumber-reports" },
-		plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
-		monochrome = true
+		//plugin = { "pretty", "html:target/cucumber-reports" }, //for html cucumber report
+		plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},  //for extent report
+		monochrome = true,
+		tags = {"@test"}
 
 		)
 public class TestRunner {
