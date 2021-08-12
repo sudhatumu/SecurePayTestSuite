@@ -17,3 +17,8 @@ From Eclipse:
 From Comman line:
 Go to your project directory from terminal and hit the following commands
 . mvn test (default will run on local chrome browser)
+
+# TestResults
+Created 4 Test Scenarios
+ - 3 Tests will Pass
+ - Last test Scenario will fail - Intentionally make it failed to check the failed screenshot attached in ExtentReport
