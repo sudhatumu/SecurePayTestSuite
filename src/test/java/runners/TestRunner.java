@@ -17,8 +17,8 @@ import managers.FileReaderManager;
 		//dryRun=true,
 		//plugin = { "pretty", "html:target/cucumber-reports" }, //for html cucumber report
 		plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},  //for extent report
-		monochrome = true,
-		tags = {"@test"}
+		monochrome = true
+		//tags = {"@test"}
 
 		)
 public class TestRunner {

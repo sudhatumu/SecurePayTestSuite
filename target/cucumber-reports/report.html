@@ -38,8 +38,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+							<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 12, 2021 11:22:41 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 12, 2021 12:35:25 PM</span>
 				</a>
 			</li>
 			<li>
@@ -79,6 +79,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -86,16 +87,6 @@
 			<!-- test toggle -->
 
 			<!-- category toggle -->
-			<div class='chip transparent'>
-				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
-					<i class='material-icons'>local_offer</i> Category
-				</a>
-				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@test</a></li>
-					<li class='divider'></li>
-					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
-				</ul>
-			</div>
 			<!-- category toggle -->
 
 			<!-- clear filters -->
@@ -139,10 +130,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -154,10 +145,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -169,10 +160,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>7</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='95.652%'><span class='strong'>22</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='4.348%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -186,21 +177,18 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>SecurePay-ContactUs page feature</span>
-						<span class='test-time'>Aug 12, 2021 11:22:41 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Aug 12, 2021 12:35:25 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@test</span>
-	</div>
-	<span class='duration right label'>0h 2m 52s+856ms</span>
+	<span class='duration right label'>0h 0m 19s+469ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">User submit the ContactUs form</span>
+		<span class="desc-text">User launch the SecurePay site</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
@@ -227,7 +215,48 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='6' class='node and pass' status='pass'>
+		<li test-id='6' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then he should navigate to SecurePay Home page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='7' status='pass'>
+	<span class='duration right label'>0h 0m 19s+955ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User navigates to Contactus Page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='8' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on Google page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='9' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When he search for "SecurePay"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='10' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And open the first link</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='11' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -235,7 +264,56 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='7' class='node and pass' status='pass'>
+		<li test-id='12' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then he should navigate to ContactUs page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='13' status='pass'>
+	<span class='duration right label'>0h 0m 23s+500ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User submit the ContactUs form</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='14' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on Google page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='15' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When he search for "SecurePay"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='16' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And open the first link</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='17' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on "contact us" link</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='18' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -243,7 +321,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='8' class='node and pass' status='pass'>
+		<li test-id='19' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
@@ -251,12 +329,86 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='9' class='node then pass' status='pass'>
+		<li test-id='20' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then the form should be submitted successfully</span>
 				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='21' status='fail'>
+	<span class='duration right label'>0h 0m 21s+318ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User submit the ContactUs form - make it fail</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='22' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on Google page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='23' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When he search for "SecurePay"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='24' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And open the first link</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='25' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on "contact us" link</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='26' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And fill the contactUs form</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='27' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Submit the form</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='28' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then the assert should fail</span>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\target\cucumber-reports\screenshots\User_submit_the_ContactUs_form_-_make_it_fail.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+				<div class='pre'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinitions.Steps.the_assert_should_fail(Steps.java:91)
+	at ✽.Then the assert should fail(TestFeature.feature:35)
+</pre></div>
 			
 		</li>
 	</ul>
@@ -288,76 +440,6 @@
 
 </div>
 <!-- test view -->
-<div id='category-view' class='view hide'>
-
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-					<i class='material-icons'>search</i> Search
-				</a>
-				
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-				
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-
-	<div class='subview-left left'>
-		
-		<div class='view-summary'>
-			<h5>Categories</h3>
-			<ul id='category-collection' class='category-collection'>
-				
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@test</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 12, 2021 11:22:41 AM</td>
-										<td class='linked' test-id='2'>SecurePay-ContactUs page feature.User submit the ContactUs form</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-
-			</ul>
-		</div>
-	</div>
-
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='category-name'></h5>
-		</div>
-	</div>
-</div>
 <!-- category view -->
 <div id='author-view' class='view hide'>
     <section id='controls'>
@@ -387,13 +469,14 @@
                             <div class='author-heading'>
                                 <span class='author-name'>Test-Sudha</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>1</span>
+                                        <span class='label pass'>3</span>
+                                        <span class='label fail'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 1</span>
-                                    
+                                    <span class='label green accent-4 white-text'>Passed: 3</span>
+                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
 
@@ -408,9 +491,24 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Aug 12, 2021 11:22:41 AM</td>
-                                                <td class='linked' test-id='2'>SecurePay-ContactUs page feature.User submit the ContactUs form</td>
+                                                <td>Aug 12, 2021 12:35:25 PM</td>
+                                                <td class='linked' test-id='2'>SecurePay-ContactUs page feature.User launch the SecurePay site</td>
                                                 <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aug 12, 2021 12:35:49 PM</td>
+                                                <td class='linked' test-id='7'>SecurePay-ContactUs page feature.User navigates to Contactus Page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aug 12, 2021 12:36:10 PM</td>
+                                                <td class='linked' test-id='13'>SecurePay-ContactUs page feature.User submit the ContactUs form</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aug 12, 2021 12:36:38 PM</td>
+                                                <td class='linked' test-id='21'>SecurePay-ContactUs page feature.User submit the ContactUs form - make it fail</td>
+                                                <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -425,6 +523,73 @@
     <div class='subview-right left'>
         <div class='view-summary'>
             <h5 class='author-name'></h5>
+        </div>
+    </div>
+</div>
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Aug 12, 2021 12:36:59 PM</td>
+                                                        <td class='linked' test-id='28'>SecurePay-ContactUs page feature.User submit the ContactUs form - make it fail.Then the assert should fail</td>
+                                                        <td><pre><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinitions.Steps.the_assert_should_fail(Steps.java:91)
+	at ✽.Then the assert should fail(TestFeature.feature:35)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
         </div>
     </div>
 </div>
@@ -443,31 +608,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>23</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 12, 2021 11:22:41 AM</div>
+					<div class='panel-lead'>Aug 12, 2021 12:35:25 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 12, 2021 11:26:03 AM</div>
+			 		<div class='panel-lead'>Aug 12, 2021 12:37:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>202,082ms</div>
+					<div class='panel-lead'>99,629ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -506,30 +671,6 @@
 					</table>
 				</div>
 			</div>
-			<div class='col s6'>
-				<div class='card-panel dashboard-categories'>
-					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
-					
-					<table>
-						<tr>
-							<th>Name</th>
-							<th>Passed</th>
-							<th>Failed</th>
-							<th>Others</th>
-							<th>Passed %</th>
-						</tr>
-						<tr>
-							<td>@test</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
@@ -540,31 +681,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 1,
-				failChild: 0,
+				passChild: 3,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
-				passGrandChild: 7,
-				failGrandChild: 0,
+				passGrandChild: 22,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		

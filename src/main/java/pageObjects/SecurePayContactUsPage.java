@@ -1,7 +1,7 @@
 package pageObjects;
 
-import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +14,8 @@ import utils.Helpers;
 public class SecurePayContactUsPage {
 
 	WebDriver driver;
-
+	Logger logger = Logger.getLogger(getClass().getName());
+	
 	public SecurePayContactUsPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -51,6 +52,12 @@ public class SecurePayContactUsPage {
 	// Methods
 	public void EnterForm() {
 		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		InputFirstName.sendKeys(Helpers.randomString(5)); // string length of 5
 		
 		InputLastName.sendKeys(Helpers.randomString(6));
@@ -69,6 +76,7 @@ public class SecurePayContactUsPage {
 		dropdown.selectByIndex(Helpers.randomIndexRange(size));
 		
 		TextAreaMessage.sendKeys(Helpers.randomString(50));
+		logger.info("Form details are entered");
 		
 	}
 	
@@ -80,6 +88,7 @@ public class SecurePayContactUsPage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		logger.info("ContactUs Page title is returned");
 		return driver.getTitle();
 	}
 	

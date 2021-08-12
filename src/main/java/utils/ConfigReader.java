@@ -61,4 +61,14 @@ public class ConfigReader {
 			throw new RuntimeException(
 					"Report Config Path not specified in the Configuration.properties file for the Key:reportConfigPath");
 	}
+	public String getLog4jPath() {
+		String log4jPath = prop.getProperty("log4jPath");
+		if (log4jPath != null)
+			return log4jPath;
+		else
+			throw new RuntimeException(
+					"Report Config Path not specified in the Configuration.properties file for the Key:reportConfigPath");
+	
+		
+	}
 }

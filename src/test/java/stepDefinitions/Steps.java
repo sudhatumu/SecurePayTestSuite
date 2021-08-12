@@ -74,14 +74,21 @@ public class Steps {
 
 	@When("^Submit the form$")
 	public void submit_the_form() {
+		//to avoid submitting the contactUs form 
 		
-		securePayContactUsPage.ClickBtnSubmit();
+		//securePayContactUsPage.ClickBtnSubmit();   
 	}
 
 	@Then("^the form should be submitted successfully$")
 	public void the_form_should_be_submitted_successfully() {
 		
 		Assert.assertTrue(true); //not submitting the form, so making it pass 
+
+	}
+	@Then("^the assert should fail$")
+	public void the_assert_should_fail() {
+		
+		Assert.assertTrue(false); // intentionally making it failed, to capture screenshot
 
 	}
 }

@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 public class SecurePayHomePage {
 	
 	WebDriver driver;
+	Logger logger = Logger.getLogger(getClass().getName());
 
 	public SecurePayHomePage(WebDriver driver) {
 		this.driver = driver;
@@ -31,10 +33,14 @@ public class SecurePayHomePage {
 		//((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 
 		LinkContactUs.click();
+		logger.info("ContactUs link is clicked");
 		
 	}
 	
 	public String GetPageTitle() {
+		
+		logger.info("SecurePay Home page Title is returned");
 		return driver.getTitle();
+		
 	}
 }

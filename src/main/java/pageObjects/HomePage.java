@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +11,7 @@ import managers.FileReaderManager;
 public class HomePage {
 	
 	WebDriver driver;	
+	Logger logger = Logger.getLogger(getClass().getName());
 	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -33,11 +35,13 @@ public class HomePage {
 	//methods
 	public void NavigateTo_GooglePage() {
 		driver.get(FileReaderManager.getInstance().getConfigReader().getAppUrl());
+		logger.info("Launch the url");
 	}
 	
 	public void DoSearch(String searchText){
 		
 		inputSearch.sendKeys(searchText);
+		logger.info("Enter the search text "+searchText);
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -45,12 +49,14 @@ public class HomePage {
 			e.printStackTrace();
 		}
 		submitSearch.click();
+		logger.info("Search has sumbitted");
 		
 	}
 	
 	public void ClickSecurePayWebsite() {
 		
 		linkSecurepay.click();
+		logger.info("First search link Clicked");
 		
 	}
 
