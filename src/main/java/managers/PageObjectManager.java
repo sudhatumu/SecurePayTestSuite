@@ -1,31 +1,35 @@
 package managers;
 
 import org.openqa.selenium.WebDriver;
-
-import pageObjects.HomePage;
+import pageObjects.GooglePage;
 import pageObjects.SecurePayContactUsPage;
 import pageObjects.SecurePayHomePage;
 
 public class PageObjectManager {
+	/*
+	 * To avoid multiple instance creation of PageObject classes when working with
+	 * multiple stepDefs. The main purpose of this class is to create Page's object
+	 * and also make sure that the same object should not be created again and
+	 * again. But to use a single object for all the step Definitions
+	 */
 
 	private WebDriver driver;
 
-	private HomePage homePage;
+	private GooglePage googlePage;
 
 	private SecurePayContactUsPage securePayContactUsPage;
-	
+
 	private SecurePayHomePage securePayHomePage;
 
-	
 	public PageObjectManager(WebDriver driver) {
 
 		this.driver = driver;
 
 	}
 
-	public HomePage getHomePage() {
+	public GooglePage getHomePage() {
 
-		return (homePage == null) ? homePage = new HomePage(driver) : homePage;
+		return (googlePage == null) ? googlePage = new GooglePage(driver) : googlePage;
 
 	}
 
@@ -37,7 +41,8 @@ public class PageObjectManager {
 
 	public SecurePayContactUsPage getSecurePayContactUsPage() {
 
-		return (securePayContactUsPage == null) ? securePayContactUsPage = new SecurePayContactUsPage(driver) : securePayContactUsPage;
+		return (securePayContactUsPage == null) ? securePayContactUsPage = new SecurePayContactUsPage(driver)
+				: securePayContactUsPage;
 
 	}
 

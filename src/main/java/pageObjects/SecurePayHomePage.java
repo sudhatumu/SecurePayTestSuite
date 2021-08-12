@@ -22,9 +22,7 @@ public class SecurePayHomePage {
 	@FindBy(how = How.XPATH, using = "//span[text()='Contact us']/parent::a[@id='icon-chevron-right']") 
 	private WebElement LinkContactUs;
 	
-	//WebElement LinkContactUs = driver.findElement(By.id("icon-chevron-right"));
-	
-	
+
 	
 	// Methods
 	public void ClickContactUsLink() {

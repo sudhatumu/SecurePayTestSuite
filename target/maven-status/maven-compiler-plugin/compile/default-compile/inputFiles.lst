@@ -1,11 +1,10 @@
 C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\CucumberHelpers\TestContext.java
 C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\managers\WebDriverManager.java
 C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\enums\DriverType.java
-C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\testDataTypes\CustomerForm.java
+C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\pageObjects\GooglePage.java
 C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\utils\ConfigReader.java
 C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\managers\FileReaderManager.java
 C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\pageObjects\SecurePayHomePage.java
 C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\managers\PageObjectManager.java
 C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\pageObjects\SecurePayContactUsPage.java
 C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\utils\Helpers.java
-C:\Users\sudha\Desktop\My Projects\Java\SecurePayTestSuite\src\main\java\pageObjects\HomePage.java

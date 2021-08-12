@@ -12,6 +12,7 @@ import org.apache.log4j.PropertyConfigurator;
 import enums.DriverType;
 
 public class WebDriverManager {
+	// The responsibility of this class is to get us the web driver, when we ask for it
 	
 	private WebDriver driver;
 	private static DriverType driverType;

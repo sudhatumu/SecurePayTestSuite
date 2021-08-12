@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 72.978 sec <<< FAILURE!
+Then the assert should fail(Scenario: User submit the ContactUs form - make it fail)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinitions.SecurePayPageSteps.the_assert_should_fail(SecurePayPageSteps.java:58)
+	at ?.Then the assert should fail(TestFeature.feature:35)
+
+Scenario: User submit the ContactUs form - make it fail  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinitions.SecurePayPageSteps.the_assert_should_fail(SecurePayPageSteps.java:58)
+	at ?.Then the assert should fail(TestFeature.feature:35)
+

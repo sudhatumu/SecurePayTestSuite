@@ -1,44 +1,148 @@
 [main] INFO  managers.WebDriverManager  - Chrome driver is initiated
 [main] INFO  managers.WebDriverManager  - Browser setup completed
-[main] INFO  pageObjects.HomePage  - Launch the url
-[main] INFO  pageObjects.HomePage  - Enter the search text SecurePay
-[main] INFO  pageObjects.HomePage  - Search has sumbitted
-[main] INFO  pageObjects.HomePage  - First search link Clicked
-[main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
-[main] INFO  pageObjects.SecurePayContactUsPage  - Form details are entered
-[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
-[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
-[main] INFO  managers.WebDriverManager  - Browser setup completed
-[main] INFO  pageObjects.HomePage  - Launch the url
-[main] INFO  pageObjects.HomePage  - Enter the search text SecurePay
-[main] INFO  pageObjects.HomePage  - Search has sumbitted
-[main] INFO  pageObjects.HomePage  - First search link Clicked
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
 [main] INFO  pageObjects.SecurePayHomePage  - SecurePay Home page Title is returned
 [main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
 [main] INFO  managers.WebDriverManager  - Chrome driver is initiated
 [main] INFO  managers.WebDriverManager  - Browser setup completed
-[main] INFO  pageObjects.HomePage  - Launch the url
-[main] INFO  pageObjects.HomePage  - Enter the search text SecurePay
-[main] INFO  pageObjects.HomePage  - Search has sumbitted
-[main] INFO  pageObjects.HomePage  - First search link Clicked
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
 [main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
 [main] INFO  pageObjects.SecurePayContactUsPage  - ContactUs Page title is returned
 [main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
 [main] INFO  managers.WebDriverManager  - Chrome driver is initiated
 [main] INFO  managers.WebDriverManager  - Browser setup completed
-[main] INFO  pageObjects.HomePage  - Launch the url
-[main] INFO  pageObjects.HomePage  - Enter the search text SecurePay
-[main] INFO  pageObjects.HomePage  - Search has sumbitted
-[main] INFO  pageObjects.HomePage  - First search link Clicked
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
 [main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
 [main] INFO  pageObjects.SecurePayContactUsPage  - Form details are entered
+[main] INFO  pageObjects.SecurePayContactUsPage  - need to click the submit - but not submitting the form for now
 [main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
 [main] INFO  managers.WebDriverManager  - Chrome driver is initiated
 [main] INFO  managers.WebDriverManager  - Browser setup completed
-[main] INFO  pageObjects.HomePage  - Launch the url
-[main] INFO  pageObjects.HomePage  - Enter the search text SecurePay
-[main] INFO  pageObjects.HomePage  - Search has sumbitted
-[main] INFO  pageObjects.HomePage  - First search link Clicked
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
 [main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
 [main] INFO  pageObjects.SecurePayContactUsPage  - Form details are entered
+[main] INFO  pageObjects.SecurePayContactUsPage  - need to click the submit - but not submitting the form for now
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - SecurePay Home page Title is returned
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
+[main] INFO  pageObjects.SecurePayContactUsPage  - ContactUs Page title is returned
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
+[main] INFO  pageObjects.SecurePayContactUsPage  - Form details are entered
+[main] INFO  pageObjects.SecurePayContactUsPage  - need to click the submit - but not submitting the form for now
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
+[main] INFO  pageObjects.SecurePayContactUsPage  - Form details are entered
+[main] INFO  pageObjects.SecurePayContactUsPage  - need to click the submit - but not submitting the form for now
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - SecurePay Home page Title is returned
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
+[main] INFO  pageObjects.SecurePayContactUsPage  - ContactUs Page title is returned
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
+[main] INFO  pageObjects.SecurePayContactUsPage  - Form details are entered
+[main] INFO  pageObjects.SecurePayContactUsPage  - need to click the submit - but not submitting the form for now
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
+[main] INFO  pageObjects.SecurePayContactUsPage  - Form details are entered
+[main] INFO  pageObjects.SecurePayContactUsPage  - need to click the submit - but not submitting the form for now
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - SecurePay Home page Title is returned
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
+[main] INFO  pageObjects.SecurePayContactUsPage  - ContactUs Page title is returned
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
+[main] INFO  pageObjects.SecurePayContactUsPage  - Form details are entered
+[main] INFO  pageObjects.SecurePayContactUsPage  - need to click the submit - but not submitting the form for now
+[main] INFO  managers.WebDriverManager  - All Browser instances are teriminated
+[main] INFO  managers.WebDriverManager  - Chrome driver is initiated
+[main] INFO  managers.WebDriverManager  - Browser setup completed
+[main] INFO  pageObjects.GooglePage  - Launch the url
+[main] INFO  pageObjects.GooglePage  - Enter the search text SecurePay
+[main] INFO  pageObjects.GooglePage  - Search has sumbitted
+[main] INFO  pageObjects.GooglePage  - First search link Clicked
+[main] INFO  pageObjects.SecurePayHomePage  - ContactUs link is clicked
+[main] INFO  pageObjects.SecurePayContactUsPage  - Form details are entered
+[main] INFO  pageObjects.SecurePayContactUsPage  - need to click the submit - but not submitting the form for now
 [main] INFO  managers.WebDriverManager  - All Browser instances are teriminated

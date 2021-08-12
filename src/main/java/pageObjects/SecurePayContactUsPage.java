@@ -52,12 +52,7 @@ public class SecurePayContactUsPage {
 	// Methods
 	public void EnterForm() {
 		
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Helpers.WaitForVisibility(InputFirstName, driver, 20);
 		InputFirstName.sendKeys(Helpers.randomString(5)); // string length of 5
 		
 		InputLastName.sendKeys(Helpers.randomString(6));
@@ -83,7 +78,7 @@ public class SecurePayContactUsPage {
 	public String GetPageTitle() {
 		//wait for page load
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -93,7 +88,9 @@ public class SecurePayContactUsPage {
 	}
 	
 	public void ClickBtnSubmit() {
-		BtnSubmit.click();
+		
+		logger.info("need to click the submit - but not submitting the form for now");  
+		//BtnSubmit.click();
 	}
 	
 	
